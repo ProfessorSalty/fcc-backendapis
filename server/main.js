@@ -1,11 +1,10 @@
 var express = require('express'),
     app     = express(),
     port    = 9000,
-    time    = require('./routes/timestamp');
+    time    = require('./routes/timestamp')
+    headerParser = require('./routes/headerparser');
 
-    app.get('/', function(request, response) {
-       response.send("Main page");
-    });
+    
 
     app.use(function(req, res, next) {
       res.header("Access-Control-Allow-Origin", "*");
@@ -13,7 +12,13 @@ var express = require('express'),
       next();
     });
 
+    app.get('/', function(request, response) {
+       response.send("Main page");
+    });
+
     app.use('/time', time);
+
+    app.use('/header', headerParser);
 
     app.listen(port, function() {
         process.stdout.write(`Server listening on port ${port}\n`);

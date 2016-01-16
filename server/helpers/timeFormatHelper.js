@@ -53,16 +53,13 @@ function setTens(num) {
 module.exports = function timeFormat(request, response) {
     var timeString = request.params.time,
     stregex = /([0-9]*)([a-z,A-Z]{3,})?([0-9]*)/g,
-    unixTime,date, month, year, timeObj = {};
+    unixTime,date, month, year, status = 200, errorFlag, timeObj = {};
 
     newTimeString = timeString.split(stregex).slice(1,4);
     var word = newTimeString[1],
-        num1 = +newTimeString[0], //preferred date, Unix time if alone
-        num2 = +newTimeString[2]; //preferred year
-//Are the numbers valid date/year?
+        num1 = +newTimeString[0], 
+        num2 = +newTimeString[2]; 
 
-//Number + word is date & month if the number is one or two digits; date & year if number is four digits; null values if three, or more than four digits.
-//If there are two numbers and a word, one number must be a valid date.  The other can be two digits (will default to some year between 1970 and 2069) or four digits.  If the first number is a valid date, the second will always be interpreted as a year.  If the first number is a four digit year, the second number must be a valid date.
     if(num1 && !num2 && !word) {//Number alone is Unix time
         unixTime = new Date(num1);
         dateString = unixTime.toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric' });
@@ -73,46 +70,50 @@ module.exports = function timeFormat(request, response) {
         num2 = num2;
         if(num1 >= 1 && num1 <= 31) {
             date = num1;
-            if(num2 >= 1 && (num2 >= 1000 && num2 <= 9999)) {
+            if(num2) {
+                if(num2 >= 1 && (num2 >= 1000 && num2 <= 9999)) {
                 year = num2;
-            } else if(num2 >= 70 && num2 < 100) {
-                num2 = setTens(num2);
-                year = `19${num2}`;
-            } else if(num2 < 70 && num2 >= 1) {
-                num2 = setTens(num2);
-                year = `20${num2}`;
-            } else {
-                year = "Invalid entry";
+                } else if(num2 >= 70 && num2 < 100) {
+                    num2 = setTens(num2);
+                    year = `19${num2}`;
+                } else if(num2 < 70 && num2 >= 1) {
+                    num2 = setTens(num2);
+                    year = `20${num2}`;
+                } else {
+                    errorFlag = true;
+                }
             }
         } else if(num2 >= 1 && num2 <= 31) {
             date = num2;
-            if(num1 >= 1 && (num1 >= 1000 && num1 <= 9999)) {
+            if(num1) {
+                if(num1 >= 1 && (num1 >= 1000 && num1 <= 9999)) {
                 year = num1;
-            } else if(num1 >= 70 && num1 < 100) {
-                num1 = setTens(num1);
-                year = `19${num1}`;
-            } else if(num1 < 70 && num1 >= 1) {
-                num1 = setTens(num1);
-                year = `20${num1}`;
-            } else {
-                year = "Invalid entry";
+                } else if(num1 >= 70 && num1 < 100) {
+                    num1 = setTens(num1);
+                    year = `19${num1}`;
+                } else if(num1 < 70 && num1 >= 1) {
+                    num1 = setTens(num1);
+                    year = `20${num1}`;
+                } else {
+                    errorFlag = true;
+                }
             }
         } else if(num1 >= 1000 && num1 <= 9999) {
             if(num2) {
-                year = "Invalid entry";
+                errorFlag = true;
             } else {
                 year = num1;
             }
         } else if(num2 >= 1000 && num2 <= 9999) {
             if(num1) {
-                year = "Invalid entry";
+                errorFlag = true;
             } else {
                 year = num2;
             }
         } else {
-            year = "Invalid entry";
+            errorFlag = true;
         }
-        if(year === "Invalid entry" || !month){
+        if(errorFlag || !month){
             timeObj = {unixTime: null, naturalTime: null}
         } else {
             month = month || "January";
@@ -120,12 +121,14 @@ module.exports = function timeFormat(request, response) {
             year = year || "1970";
             var naturalString = `${month} ${date}, ${year}`;
             unixTime = new Date(naturalString);
+            naturalString = unixTime.toLocaleString('en-us',{year: 'numeric', month: 'long', day: 'numeric' }); //get the string from the unix time to account for not-quite-wrong-but-not-right inputs like 'feb30'.
             timeObj = {unixTime: +unixTime, naturalTime: naturalString};
         }
          
     } else {
         timeObj = {unixTime: null, naturalTime: null};
+        status = 500;
     }
     
-    response.send(timeObj);
+    response.status(status).json(timeObj);
 }
