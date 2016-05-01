@@ -1,5 +1,4 @@
-var express = require('express'),
-    router  = express.Router(),
+const router = require('express').Router(),
     headerParser = require('./../helpers/header');
 
     router.get('/', headerParser);

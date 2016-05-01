@@ -1,9 +1,8 @@
-var express = require('express'),
-    router  = express.Router(),
-    timeFormat = require('./../helpers/timeFormatHelper');
+const router = require('express').Router(),
+          timeFormat = require('./../helpers/timeFormatHelper');
 
 router.route('/')
-    .get(function(request, response) {
+    .get((request, response) => {
         response.send("Time required");
     });
 

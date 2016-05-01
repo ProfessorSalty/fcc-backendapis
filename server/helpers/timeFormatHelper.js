@@ -40,7 +40,7 @@ function getMonthFromWord(word) {
         default:
             return false;
     }
-} 
+}
 
 function setTens(num) {
     if(num < 10) {
@@ -50,15 +50,15 @@ function setTens(num) {
     }
 }
 
-module.exports = function timeFormat(request, response) {
+module.exports =   (request, response) => {
     var timeString = request.params.time,
     stregex = /([0-9]*)([a-z,A-Z]{3,})?([0-9]*)/g,
     unixTime,date, month, year, status = 200, errorFlag, timeObj = {};
 
     newTimeString = timeString.split(stregex).slice(1,4);
     var word = newTimeString[1],
-        num1 = +newTimeString[0], 
-        num2 = +newTimeString[2]; 
+        num1 = +newTimeString[0],
+        num2 = +newTimeString[2];
 
     if(num1 && !num2 && !word) {//Number alone is Unix time
         unixTime = new Date(num1);
@@ -124,11 +124,11 @@ module.exports = function timeFormat(request, response) {
             naturalString = unixTime.toLocaleString('en-us',{year: 'numeric', month: 'long', day: 'numeric' }); //get the string from the unix time to account for not-quite-wrong-but-not-right inputs like 'feb30'.
             timeObj = {unixTime: +unixTime, naturalTime: naturalString};
         }
-         
+
     } else {
         timeObj = {unixTime: null, naturalTime: null};
         status = 500;
     }
-    
+
     response.status(status).json(timeObj);
 }

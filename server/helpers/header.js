@@ -1,4 +1,4 @@
-module.exports = function(request, response) {
+module.exports = (request, response) =>  {
         var language = request.headers["accept-language"].slice(0,6),
             userAgent = request.headers["user-agent"],
             ipaddress = request.ip,
