@@ -1,0 +1,2033 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"store",
+				"storedUrl"
+			],
+			[
+				"short",
+				"shortener"
+			],
+			[
+				"str",
+				"string"
+			],
+			[
+				"dec",
+				"decodedNum"
+			],
+			[
+				"enc",
+				"encodedString"
+			],
+			[
+				"com",
+				"compile"
+			],
+			[
+				"comp",
+				"compiled"
+			],
+			[
+				"standup",
+				"standupCtrl"
+			],
+			[
+				"stand",
+				"standupCtrl"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"firs",
+				"firstAss"
+			],
+			[
+				"collection",
+				"collectionOfArrays"
+			],
+			[
+				"array",
+				"arrayOfElements"
+			],
+			[
+				"stude",
+				"student (obj)"
+			],
+			[
+				"student",
+				"studentName (str)"
+			],
+			[
+				"chai",
+				"chaiAsPromised (?)"
+			],
+			[
+				"10",
+				"10:00"
+			],
+			[
+				"studen",
+				"studentName〔variable〕"
+			],
+			[
+				"mocha",
+				"mochaTest"
+			],
+			[
+				"gu",
+				"gutil"
+			],
+			[
+				"expec",
+				"expectation〔variable〕"
+			],
+			[
+				"mock",
+				"mockObj"
+			],
+			[
+				"class",
+				"classIsFull"
+			],
+			[
+				"drop",
+				"dropClass"
+			],
+			[
+				"retur",
+				"returnValue"
+			],
+			[
+				"require",
+				"requireActual"
+			],
+			[
+				"fun",
+				"function〔keyword〕"
+			],
+			[
+				"the",
+				"theBestStringEver"
+			],
+			[
+				"implici",
+				"implicitlyUnwrappedString"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"ingre",
+				"ingredients"
+			],
+			[
+				"form-",
+				"form-group"
+			],
+			[
+				"option",
+				"optionalCheckbox"
+			],
+			[
+				"ingr",
+				"ingredientName"
+			],
+			[
+				"Moda",
+				"ModalBody"
+			],
+			[
+				"abort",
+				"abortLabel"
+			],
+			[
+				"confir",
+				"confirmLabel"
+			],
+			[
+				"q",
+				"quantity"
+			],
+			[
+				"ingred",
+				"ingredientName"
+			],
+			[
+				"ingredi",
+				"ingredient"
+			],
+			[
+				"Recip",
+				"RecipeBoxStore"
+			],
+			[
+				"actionTyp",
+				"actionType"
+			],
+			[
+				"instru",
+				"instructions"
+			],
+			[
+				"l",
+				"Link"
+			],
+			[
+				"Reci",
+				"RecipeBoxStore"
+			],
+			[
+				"init",
+				"initData"
+			],
+			[
+				"local",
+				"localData"
+			],
+			[
+				"in",
+				"instructions"
+			],
+			[
+				"d",
+				"Dispatcher"
+			],
+			[
+				"recipe",
+				"recipe-box"
+			],
+			[
+				"setAll",
+				"setAllTimeLeaderboard"
+			],
+			[
+				"setThir",
+				"setThirtyDayLeaderboard"
+			],
+			[
+				"LEad",
+				"LeaderboardStore"
+			],
+			[
+				"Leader",
+				"LeaderboardStore"
+			],
+			[
+				"load",
+				"leaderboardStore"
+			],
+			[
+				"Ch",
+				"CHANGE_EVENT"
+			],
+			[
+				"leader",
+				"leaderboard"
+			],
+			[
+				"Lead",
+				"LeaderboardRow"
+			],
+			[
+				"all",
+				"allTimeLeaderboard"
+			],
+			[
+				"Co",
+				"Codemirror"
+			],
+			[
+				"source",
+				"sourcemaps"
+			],
+			[
+				"React",
+				"ReactDOM"
+			],
+			[
+				"exist",
+				"existingCourseIndex"
+			],
+			[
+				"Action",
+				"ActionTypes"
+			],
+			[
+				"Autho",
+				"AuthorStore"
+			],
+			[
+				"Author",
+				"AuthorActions"
+			],
+			[
+				"exi",
+				"existingAuthor"
+			],
+			[
+				"emit",
+				"emitChange"
+			],
+			[
+				"ation",
+				"ActionTypes"
+			],
+			[
+				"actionT",
+				"ActionTypes"
+			],
+			[
+				"sourmap",
+				"sourcemaps"
+			],
+			[
+				"return",
+				"returnObj"
+			],
+			[
+				"Aut",
+				"AuthorForm"
+			],
+			[
+				"NotFOu",
+				"NotFoundPage"
+			],
+			[
+				"about",
+				"aboutPage"
+			],
+			[
+				"author",
+				"authorPage"
+			],
+			[
+				"sour",
+				"sourcemaps"
+			],
+			[
+				"jq",
+				"jquery"
+			],
+			[
+				"component",
+				"componentLifecycle"
+			],
+			[
+				"Chat",
+				"ChatStores"
+			],
+			[
+				"on",
+				"onKeyUp"
+			],
+			[
+				"messages",
+				"messages"
+			],
+			[
+				"Grocer",
+				"GroceryItem"
+			],
+			[
+				"api",
+				"apiUrl"
+			],
+			[
+				"lis",
+				"listeners"
+			],
+			[
+				"trigger",
+				"triggerListeners"
+			],
+			[
+				"liste",
+				"listeners"
+			],
+			[
+				"inner",
+				"innerWidth	.innerWidth()"
+			],
+			[
+				"select",
+				"selectAll"
+			],
+			[
+				"chart",
+				"chartAttrs"
+			],
+			[
+				"char",
+				"chartSelected"
+			],
+			[
+				"ORDER",
+				"OrderData"
+			],
+			[
+				"selected",
+				"selectedStatus"
+			],
+			[
+				"Order",
+				"OrdersTable"
+			],
+			[
+				"componentWi",
+				"componentWillReceiveProps"
+			],
+			[
+				"uni",
+				"uniqueId"
+			],
+			[
+				"rand",
+				"randomBetween"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"trans",
+				"transparentBlack"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"curre",
+				"currentPlayer"
+			],
+			[
+				"game",
+				"gameStateArray"
+			],
+			[
+				"get",
+				"getBestMove"
+			],
+			[
+				"end",
+				"endGame"
+			],
+			[
+				"playe",
+				"playerTile"
+			],
+			[
+				"play",
+				"playerTile"
+			],
+			[
+				"O",
+				"O_tile"
+			],
+			[
+				"x_",
+				"X_tile"
+			],
+			[
+				"best",
+				"bestScore"
+			],
+			[
+				"mini",
+				"MinimizingToken"
+			],
+			[
+				"first",
+				"firstTile"
+			],
+			[
+				"start",
+				"startGame"
+			],
+			[
+				"latestEn",
+				"latestEntry"
+			],
+			[
+				"user-sel",
+				"user-select"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"darkgre",
+				"darkGreen"
+			],
+			[
+				"Contact",
+				"ContactHeadingFont"
+			],
+			[
+				"tra",
+				"transparentize"
+			],
+			[
+				"font",
+				"fontWhite"
+			],
+			[
+				"bower",
+				"bower_components"
+			],
+			[
+				"reset",
+				"resetTimers"
+			],
+			[
+				"stop",
+				"stopSounds"
+			],
+			[
+				"targe",
+				"targetId"
+			],
+			[
+				"player",
+				"playerHasMadeSelection"
+			],
+			[
+				"sound",
+				"soundingTimer"
+			],
+			[
+				"strict",
+				"strictMode"
+			],
+			[
+				"stri",
+				"strictMode"
+			],
+			[
+				"att",
+				"attr	.attr() - single"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "server/routes/urlshortener.js",
+			"settings":
+			{
+				"buffer_size": 1246,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/main.js",
+			"settings":
+			{
+				"buffer_size": 768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "server/helpers/timeFormatHelper.js",
+			"settings":
+			{
+				"buffer_size": 4093,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "indent",
+		"selected_items":
+		[
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"ColorSchemeSelector: Select Color Scheme"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"read",
+				"ReadmePlease"
+			],
+			[
+				"new file",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"theme",
+				"Themr: List themes"
+			],
+			[
+				"Snippet: sec",
+				"Snippet: section"
+			],
+			[
+				"tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"themr",
+				"Themr: List themes"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"swift",
+				"Set Syntax: Swift"
+			],
+			[
+				"next",
+				"Set Syntax: JSON (Javascript Next)"
+			],
+			[
+				"babel",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"atabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"jasmine",
+				"Set Syntax: Jasmine"
+			],
+			[
+				"new folder",
+				"File: New Folder Relative to Project Root"
+			],
+			[
+				"word",
+				"Word Wrap: Toggle"
+			],
+			[
+				"latex",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"status",
+				"View: Toggle Status Bar"
+			],
+			[
+				"new fil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"newfil",
+				"File: New File Relative to Current View"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"statu",
+				"View: Toggle Status Bar"
+			],
+			[
+				"filename",
+				"File: Rename"
+			],
+			[
+				"new",
+				"File: New File Relative to Current View"
+			],
+			[
+				"new ",
+				"File: New File Relative to Current View"
+			],
+			[
+				"convert",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"word wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"new fie",
+				"File: New File Relative to Current View"
+			],
+			[
+				"paca",
+				"Package Control: Install Package"
+			],
+			[
+				"syntax java",
+				"Set Syntax: JavaScript Next"
+			],
+			[
+				"snipp",
+				"Snippet: gitignore"
+			],
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				"jsx",
+				"Set Syntax: JSX"
+			],
+			[
+				"ejs",
+				"Set Syntax: EJS (<% and %>)"
+			],
+			[
+				"javasc	",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javsc",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"java	",
+				"Set Syntax: Java"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"tasbs",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"latext",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"scss",
+				"Set Syntax: CSS"
+			],
+			[
+				"reind",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"bibt",
+				"Set Syntax: BibTeX"
+			],
+			[
+				"do",
+				"DevDocs: Search From Input"
+			],
+			[
+				"late",
+				"Set Syntax: LaTeX"
+			],
+			[
+				"Snippet: ",
+				"Snippet: closure"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 321.0,
+		"history":
+		[
+			"pip install codeintel",
+			"mocha",
+			"clear",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/gregsmith/fcc-basejumps",
+		"/Users/gregsmith/fcc-basejumps/server",
+		"/Users/gregsmith/fcc-basejumps/server/helpers",
+		"/Users/gregsmith/fcc-basejumps/server/routes"
+	],
+	"file_history":
+	[
+		"/Users/gregsmith/fcc-basejumps/server/routes/timestamp.js",
+		"/Users/gregsmith/fcc-basejumps/server/helpers/urlcodec.js",
+		"/Users/gregsmith/Downloads/mongo 2/count.js",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/gregsmith/fcc-basejumps/package.json",
+		"/Users/gregsmith/fcc-basejumps/server/main.js",
+		"/Users/gregsmith/fcc-basejumps/server/routes/headerparser.js",
+		"/Users/gregsmith/fcc-basejumps/server/helpers/header.js",
+		"/Users/gregsmith/fcc-basejumps/server/helpers/timeFormatHelper.js",
+		"/Users/gregsmith/fcc-basejumps/server/helpers/urlCodec.js",
+		"/Users/gregsmith/Downloads/handlebars-javascript-templating/4-handlebars-javascript-m4/after/js/app.js",
+		"/Users/gregsmith/Desktop/DogorNot/gulpfile.js",
+		"/Users/gregsmith/Desktop/DogorNot/templates/_dog.hbs",
+		"/Users/gregsmith/Desktop/DogorNot/templates/index.hbs",
+		"/Users/gregsmith/Desktop/DogorNot/js/helpers.js",
+		"/Users/gregsmith/Desktop/DogorNot/index.html",
+		"/Users/gregsmith/Desktop/DogorNot/js/app.js",
+		"/Users/gregsmith/Desktop/DogorNot/build/js/templates.js",
+		"/Users/gregsmith/Downloads/handlebars-javascript-templating/4-handlebars-javascript-m4/after/gulp/templates.js",
+		"/Users/gregsmith/Downloads/handlebars-javascript-templating/4-handlebars-javascript-m4/after/gulpfile.js",
+		"/Users/gregsmith/Desktop/DogorNot/templates/score.hbs",
+		"/Users/gregsmith/Desktop/DogorNot/templates/page.hbs",
+		"/Users/gregsmith/Desktop/DogorNot/templates/dogs.hbs",
+		"/Users/gregsmith/Desktop/DogorNot/css/stylesheet.css",
+		"/Users/gregsmith/Desktop/DogorNot/js/dogPack.js",
+		"/Users/gregsmith/Dropbox/SPRK Sounds/Modulating Sounds/filter data.txt",
+		"/Users/gregsmith/.zshrc",
+		"/Users/gregsmith/handlbarsTest/index.html",
+		"/Users/gregsmith/Desktop/Case Study - Before/booking.css",
+		"/Users/gregsmith/Desktop/Case Study - Before/booking.html",
+		"/Users/gregsmith/mongoose_ps/routes/index.js",
+		"/Users/gregsmith/mongoose_ps/controllers/standup.server.controller.js",
+		"/Users/gregsmith/mongoose_ps/models/standup.server.model.js",
+		"/Users/gregsmith/mongoose_ps/app.js",
+		"/Users/gregsmith/mongoose_ps/public/stylesheets/style.css",
+		"/Users/gregsmith/mongoose_ps/views/newnote.html",
+		"/Users/gregsmith/mongoose_ps/bin/www",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/promises/test.js",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/io/DataLoader.js",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/io/Course.js",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/io/test/registrationTests.js",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/io/test/dataLoaderTests.js",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/tern_for_sublime/Tern.sublime-settings",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/io/Registration.js",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/Tern.sublime-settings",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/SublimeCodeIntel/README.rst",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/Terminal (OSX).sublime-settings",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/Terminal.sublime-settings",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/Terminal/Terminal.sublime-settings",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/business-logic/test/courseTests.js",
+		"/Users/gregsmith/Downloads/unit-testing-nodejs/3-unit-testing-nodejs-m3-exercise-files/before/business-logic/test/studentTests.js",
+		"/Users/gregsmith/nodeTesting/gruntfile.js",
+		"/Users/gregsmith/nodeTesting/gulpfile.js",
+		"/Users/gregsmith/nodeTesting/test/sinonTests.js",
+		"/Volumes/Drive2/ownCloud/Sublime/User/JavaScript/it.sublime-snippet",
+		"/Volumes/Drive2/ownCloud/Sublime/User/JavaScript/describe.sublime-snippet",
+		"/Users/gregsmith/nodeTesting/tests/sinonTests.js",
+		"/Users/gregsmith/jest-examplar/__tests__/app/helpers/restHelper-test.js",
+		"/Users/gregsmith/jest-examplar/app/helpers/restHelper.js",
+		"/Users/gregsmith/jest-examplar/__tests__/app/stores/ItemStore-test.js",
+		"/Users/gregsmith/jest-examplar/app/helpers/__mocks__/restHelper.js",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
+		"/Volumes/Drive2/ownCloud/Sublime/User/JavaScript/it.xml",
+		"/Volumes/Drive2/ownCloud/Sublime/User/JavaScript/describe.xml",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/gregsmith/Downloads/mbadolato-iTerm2-Color-Schemes-a646a1d/README.md",
+		"/Users/gregsmith/jest-examplar/package.json",
+		"/Users/gregsmith/jest-examplar/__tests__/app/components/CartItem-tests.js",
+		"/Users/gregsmith/jest-examplar/server/server.js",
+		"/Users/gregsmith/Desktop/GoF_Study_Guide.txt",
+		"/Users/gregsmith/Desktop/Objective_c_skills.m",
+		"/Users/gregsmith/Desktop/swift_skills.swift",
+		"/Users/gregsmith/JestTesting/__tests__/app/components/CartItem-test.js",
+		"/Users/gregsmith/JestTesting/package.json",
+		"/Users/gregsmith/JestTesting/gulpfile.js",
+		"/Users/gregsmith/flux-react/gulpfile.js",
+		"/Users/gregsmith/JestTesting/server/server.js",
+		"/Users/gregsmith/Downloads/jest-mastering-react-testing/4-jest-mastering-react-testing-m4-exercise-files/Start/React-Jest Chapter 4 Start/gulpfile.js",
+		"/Users/gregsmith/JestTesting/app/main.js",
+		"/Users/gregsmith/Downloads/jest-mastering-react-testing/4-jest-mastering-react-testing-m4-exercise-files/Start/React-Jest Chapter 4 Start/package.json",
+		"/Users/gregsmith/Desktop/cpp_skills.cpp",
+		"/Users/gregsmith/Desktop/ruby_on_rails_assignment.rb",
+		"/Users/gregsmith/Desktop/geometric_sum.rb",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/User/Distraction Free.sublime-settings",
+		"/Users/gregsmith/Dropbox/howtomakemoney.txt",
+		"/Volumes/Drive2/ownCloud/Sublime/User/LaTeXTools.sublime-settings",
+		"/Users/gregsmith/Library/Application Support/Sublime Text 3/Packages/LaTeXTools/README.markdown",
+		"/Users/gregsmith/Documents/REPAYEletter.tex",
+		"/Users/gregsmith/Documents/REPAYEletter.log",
+		"/Users/gregsmith/recipe-box/src/components/recipeForm.js",
+		"/Users/gregsmith/recipe-box/src/constants/actionTypes.js",
+		"/Users/gregsmith/recipe-box/src/actions/recipeBoxActions.js",
+		"/Users/gregsmith/recipe-box/src/scss/main.scss",
+		"/Users/gregsmith/recipe-box/dist/scripts/bundle.js",
+		"/Users/gregsmith/recipe-box/src/data/initData.json",
+		"/Users/gregsmith/recipe-box/src/scss/_variables.scss",
+		"/Users/gregsmith/recipe-box/src/main.js",
+		"/Users/gregsmith/recipe-box/src/components/notFoundPage.js",
+		"/Users/gregsmith/recipe-box/src/components/recipeDisplay.js",
+		"/Users/gregsmith/recipe-box/gulpfile.js",
+		"/Users/gregsmith/recipe-box/src/components/recipeBoxManager.js",
+		"/Users/gregsmith/recipe-box/src/components/recipeList.js",
+		"/Users/gregsmith/recipe-box/src/components/recipeItem.js",
+		"/Users/gregsmith/recipe-box/src/stores/recipeBoxStore.js",
+		"/Users/gregsmith/flux-react/src/routes.js",
+		"/Users/gregsmith/flux-react/src/components/app.js",
+		"/Users/gregsmith/flux-react/src/components/authors/manageAuthorPage.js",
+		"/Users/gregsmith/recipe-box/src/components/modal/confirm.js",
+		"/Users/gregsmith/recipe-box/src/components/modal/modal.js",
+		"/Users/gregsmith/recipe-box/src/components/modal/modal-dialog.js",
+		"/Users/gregsmith/recipe-box/src/components/modal/modal-body.js",
+		"/Users/gregsmith/recipe-box/src/components/header.js",
+		"/Users/gregsmith/recipe-box/src/components/app.js",
+		"/Users/gregsmith/recipe-box/src/components/modalConfirm.js",
+		"/Users/gregsmith/flux-react/src/stores/authorStore.js",
+		"/Users/gregsmith/leaderboard/src/actions/leaderboardActions.js",
+		"/Users/gregsmith/flux-react/src/components/authors/AuthorPage.js",
+		"/Users/gregsmith/recipe-box/src/routes.js",
+		"/Users/gregsmith/recipe-box/src/index.html",
+		"/Users/gregsmith/recipe-box/package.json",
+		"/Users/gregsmith/uninstall-homebrew.sh",
+		"/Users/gregsmith/test/npm-debug.log",
+		"/Users/gregsmith/.npmrc",
+		"/Users/gregsmith/recipe-box/src/dispatcher/appDispatcher.js",
+		"/Users/gregsmith/flux-react/src/actions/initializeActions.js",
+		"/Volumes/Drive2/ownCloud/Sublime/User/JavaScript/import react.sublime-snippet"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 132.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"processPartialName",
+			"var",
+			"let",
+			"accelerator",
+			"@root.",
+			"-webkit-",
+			"return",
+			"var",
+			"value",
+			"auto",
+			"arguments",
+			"times",
+			"students",
+			"arguments",
+			"mySuperAwesomeClass",
+			"recipes",
+			"console",
+			"Link",
+			"div",
+			"Confirm",
+			"this.",
+			"abort",
+			"backdrop",
+			"Backdrop",
+			"Alert",
+			"div",
+			"for",
+			"added",
+			"name",
+			"div",
+			"../stores/recipeStore",
+			"recipeStore",
+			"div",
+			"directions",
+			"div",
+			"createIngredientsList",
+			"createBrowserHistory",
+			"recipes",
+			"Recipes",
+			"Action",
+			"action",
+			"'",
+			"bundle",
+			"leaderboard",
+			"index",
+			"clickable",
+			"className='btn btn-default'",
+			"this.props.leader",
+			"ThirtyDay",
+			"THIRTYDAY",
+			"ThirtyDay",
+			"THIRTYDAY",
+			"props",
+			"gfm",
+			"',\n",
+			"div",
+			"InputBox",
+			"inputBox",
+			"InputBox",
+			"map",
+			"lint",
+			"plugins",
+			"$",
+			"length",
+			"function",
+			"AUTHOR",
+			"Length",
+			"div",
+			"href",
+			"courseStore",
+			"Author",
+			"author",
+			"this.",
+			",\n\n    updateAuthor: function(author) {\n        let newAuthor = AuthorApi.saveAuthor(author);\n\n        Dispatcher.dispatch({\n            actionType: ActionTypes.UPDATE_AUTHOR,\n            author: newAuthor\n        });\n    }",
+			"_this",
+			"Listener",
+			"saveAuthor",
+			"AuthorApi",
+			"actionTypes",
+			"list",
+			"'change'",
+			"object.assign",
+			"\\^",
+			"^",
+			"this.props.",
+			"router",
+			"init",
+			"Link",
+			"context",
+			"(\n",
+			"}\n",
+			" firstName: '',\n                                lastName: ''\n                            };",
+			");",
+			");\n",
+			"First",
+			"firstName",
+			"React.",
+			"Input",
+			"AuthorForm",
+			"ManageAuthorPage",
+			"NotFountPage",
+			"a",
+			"href",
+			"A",
+			"a",
+			"A",
+			"a",
+			"config",
+			"Route",
+			"function()",
+			"var",
+			"authors",
+			"Authors",
+			"authors",
+			"Authors",
+			"})\n",
+			"console",
+			");\n",
+			"author",
+			"x",
+			"authors",
+			"Authors",
+			"authors",
+			"about",
+			"pip$",
+			"reactify",
+			"Browserify",
+			"Gulp"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"",
+			"AuthorStore",
+			"",
+			"'",
+			" {",
+			"\\s\\{",
+			"'",
+			"context",
+			"'",
+			"campernews",
+			"'newsSite'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "server/routes/urlshortener.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1246,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								218,
+								218
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 768,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								768,
+								768
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server/helpers/timeFormatHelper.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1129,
+								1129
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1012.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 37.0
+	},
+	"input":
+	{
+		"height": 84.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 388.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 202.0
+	},
+	"pinned_build_system": "",
+	"project": "backend-projects.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"templ",
+				"build/js/templates.js"
+			],
+			[
+				"app",
+				"js/app.js"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"helpe",
+				"js/helpers.js"
+			],
+			[
+				"index.js",
+				"routes/index.js"
+			],
+			[
+				"appj",
+				"app.js"
+			],
+			[
+				"recipeaction",
+				"src/actions/recipeBoxActions.js"
+			],
+			[
+				"",
+				"src/main.js"
+			],
+			[
+				"main",
+				"src/main.js"
+			],
+			[
+				"recipefo",
+				"src/components/recipeForm.js"
+			],
+			[
+				"recipest",
+				"src/stores/recipeBoxStore.js"
+			],
+			[
+				"recipeform",
+				"src/components/recipeForm.js"
+			],
+			[
+				"main.s",
+				"src/scss/main.scss"
+			],
+			[
+				"recipedis",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"store",
+				"src/stores/recipeBoxStore.js"
+			],
+			[
+				"form",
+				"src/components/recipeForm.js"
+			],
+			[
+				"recipemanag",
+				"src/components/recipeBoxManager.js"
+			],
+			[
+				"main.sc",
+				"src/scss/main.scss"
+			],
+			[
+				"varia",
+				"src/scss/_variables.scss"
+			],
+			[
+				"main.scss",
+				"src/scss/main.scss"
+			],
+			[
+				"reciped",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"recip",
+				"src/components/recipeForm.js"
+			],
+			[
+				"actions",
+				"src/actions/recipeBoxActions.js"
+			],
+			[
+				"action",
+				"src/actions/recipeBoxActions.js"
+			],
+			[
+				"actionty",
+				"src/constants/actionTypes.js"
+			],
+			[
+				"main.scs",
+				"src/scss/main.scss"
+			],
+			[
+				"init",
+				"src/data/initData.json"
+			],
+			[
+				"initd",
+				"src/data/initData.json"
+			],
+			[
+				"initda",
+				"src/data/initData.json"
+			],
+			[
+				"recipefor",
+				"src/components/recipeForm.js"
+			],
+			[
+				"recipemana",
+				"src/components/recipeBoxManager.js"
+			],
+			[
+				"recipelist",
+				"src/components/recipeList.js"
+			],
+			[
+				"recipedi",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"recipemanage",
+				"src/components/recipeBoxManager.js"
+			],
+			[
+				"recipeman",
+				"src/components/recipeBoxManager.js"
+			],
+			[
+				"mi",
+				"src/main.js"
+			],
+			[
+				"dispa",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"displa",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"data",
+				"src/data/initData.json"
+			],
+			[
+				"reci",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"rec",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"var",
+				"src/scss/_variables.scss"
+			],
+			[
+				"recipeitem",
+				"src/components/recipeItem.js"
+			],
+			[
+				"recipe",
+				"src/components/recipeDisplay.js"
+			],
+			[
+				"main.j",
+				"src/main.js"
+			],
+			[
+				"main.js",
+				"src/main.js"
+			],
+			[
+				"vr",
+				"src/scss/_variables.scss"
+			],
+			[
+				"ini",
+				"src/data/initData.json"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"reciplist",
+				"src/components/recipeList.js"
+			],
+			[
+				"recipestore",
+				"src/stores/recipeBoxStore.js"
+			],
+			[
+				"header",
+				"src/components/header.js"
+			],
+			[
+				"dispatc",
+				"src/dispatcher/appDispatcher.js"
+			],
+			[
+				"recipeactions",
+				"src/actions/recipeBoxActions.js"
+			],
+			[
+				"recipemanager",
+				"src/components/recipeBoxManager.js"
+			],
+			[
+				"recipli",
+				"src/components/recipeList.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"leaderstore",
+				"src/stores/leaderboardStore.js"
+			],
+			[
+				"leaderboardactions",
+				"src/actions/leaderboardActions.js"
+			],
+			[
+				"index.",
+				"src/index.html"
+			],
+			[
+				"authorstore",
+				"src/stores/authorStore.js"
+			],
+			[
+				"man",
+				"src/components/authors/manageAuthorPage.js"
+			],
+			[
+				"authorrow",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"manage",
+				"src/components/courses/manageCoursePage.js"
+			],
+			[
+				"manageau",
+				"src/components/authors/manageAuthorPage.js"
+			],
+			[
+				"courseda",
+				"src/api/courseData.js"
+			],
+			[
+				"coursepage",
+				"src/components/courses/CoursePage.js"
+			],
+			[
+				"courserow",
+				"src/components/courses/CourseRow.js"
+			],
+			[
+				"routes",
+				"src/routes.js"
+			],
+			[
+				"courselist",
+				"src/components/courses/CourseList.js"
+			],
+			[
+				"coursestore",
+				"src/stores/courseStore.js"
+			],
+			[
+				"gulpfil",
+				"gulpfile.js"
+			],
+			[
+				"managecourse",
+				"src/components/courses/manageCoursePage.js"
+			],
+			[
+				"coursedata",
+				"src/api/courseData.js"
+			],
+			[
+				"autorpage",
+				"src/components/authors/AuthorPage.js"
+			],
+			[
+				"authorst",
+				"src/stores/authorStore.js"
+			],
+			[
+				"authorac",
+				"src/actions/authorActions.js"
+			],
+			[
+				"authoraction",
+				"src/actions/authorActions.js"
+			],
+			[
+				"authororw",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"authorsto",
+				"src/stores/authorStore.js"
+			],
+			[
+				"authorro",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"authorlist",
+				"src/components/authors/AuthorList.js"
+			],
+			[
+				"authorpage",
+				"src/components/authors/AuthorPage.js"
+			],
+			[
+				"autho",
+				"src/stores/authorStore.js"
+			],
+			[
+				"mana",
+				"src/components/authors/manageAuthorPage.js"
+			],
+			[
+				"authoract",
+				"src/actions/authorActions.js"
+			],
+			[
+				"initi",
+				"src/actions/initializeActions.js"
+			],
+			[
+				"actiot",
+				"src/constants/actionTypes.js"
+			],
+			[
+				"authorstr",
+				"src/stores/authorStore.js"
+			],
+			[
+				"authoractions",
+				"src/actions/authorActions.js"
+			],
+			[
+				"appdis",
+				"src/dispatcher/appDispatcher.js"
+			],
+			[
+				"packag",
+				"package.json"
+			],
+			[
+				"pakca",
+				"package.json"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"pc",
+				"package.json"
+			],
+			[
+				"text",
+				"src/components/common/textInput.js"
+			],
+			[
+				"authorli",
+				"src/components/authors/AuthorList.js"
+			],
+			[
+				"atuhorrow",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"authr",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"gu",
+				"package.json.backup"
+			],
+			[
+				"gulpf",
+				"gulpfile.js"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"authorr",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"homepa",
+				"src/components/homepage.js"
+			],
+			[
+				"authoror",
+				"src/components/authors/AuthorRow.js"
+			],
+			[
+				"textin",
+				"src/components/common/textInput.js"
+			],
+			[
+				"authorf",
+				"src/components/authors/authorForm.js"
+			],
+			[
+				"textinput",
+				"src/components/common/textInput.js"
+			],
+			[
+				"authorfo",
+				"src/components/authors/authorForm.js"
+			],
+			[
+				"managea",
+				"src/components/authors/manageAuthorPage.js"
+			],
+			[
+				"aboutp",
+				"src/components/about/aboutPage.js"
+			],
+			[
+				"home",
+				"src/components/homepage.js"
+			],
+			[
+				"homepage",
+				"src/components/homepage.js"
+			],
+			[
+				"es",
+				"eslint.config.json"
+			],
+			[
+				"authorl",
+				"src/components/authors/AuthorList.js"
+			],
+			[
+				"react",
+				"React skills.js"
+			],
+			[
+				"reac",
+				"React skills.js"
+			],
+			[
+				"auth",
+				"src/components/authors/authorPage.js"
+			],
+			[
+				"author",
+				"src/components/authors/authorPage.js"
+			],
+			[
+				"authorpages",
+				"src/components/authors/authorPage.js"
+			],
+			[
+				"esli",
+				"eslint.config.json"
+			],
+			[
+				"about",
+				"src/components/about/aboutPage.js"
+			],
+			[
+				"eslin",
+				"eslint.config.json"
+			],
+			[
+				"app.js",
+				"src/components/App.jsx"
+			],
+			[
+				"server/main",
+				"server/main.js"
+			],
+			[
+				"index.ej",
+				"app/index.ejs"
+			],
+			[
+				"items",
+				"server/routes/items.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": false,
+	"side_bar_visible": true,
+	"side_bar_width": 236.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
