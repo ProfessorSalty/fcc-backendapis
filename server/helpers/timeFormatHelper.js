@@ -51,11 +51,17 @@ function setTens(num) {
 }
 
 module.exports =   (request, response) => {
-    var timeString = request.params.time,
-    stregex = /([0-9]*)([a-z,A-Z]{3,})?([0-9]*)/g,
+    var timeString = decodeURI(request.params.time),
+    stregex = /([0-9]*)(\s)?([a-z,A-Z]{3,})?(\s)?([0-9]*)/g,
     unixTime,date, month, year, status = 200, errorFlag, timeObj = {};
 
-    newTimeString = timeString.split(stregex).slice(1,4);
+    newTimeString = timeString.split(stregex).filter((x) => {
+      return x !== '' && x !== ' ' && x !== undefined;
+    });
+
+    console.log(newTimeString);
+
+
     var word = newTimeString[1],
         num1 = +newTimeString[0],
         num2 = +newTimeString[2];
