@@ -2,18 +2,18 @@
 
 const router = require('express').Router(),
       mongoose = require('mongoose'),
-      dbPath = 'mongodb://localhost:27017/urls',
+      config = require('../config/config.js'),
+      dbPath = config.dbPath,
       urlHelper = require('../helpers/urlhelpers.js');
 
 mongoose.connect(dbPath);
 
-router.route('/').get((request, response) => {
-    //Display web page
-    response.send('Imma shorten things');
+router.get('/', (request, response) => {
+    response.render('shortener');
 });
 
-router.route(/\/new\/(http[s]?:\/\/)?(.+)/).all(urlHelper.processNewUrl);
+router.all(/\/new\/(http[s]?:\/\/)?(.+)/, urlHelper.processNewUrl);
 
-router.route('/:encoded_id').get(urlHelper.processEncodedUrl);
+router.get('/:encoded_id', urlHelper.processEncodedUrl);
 
 module.exports = router;

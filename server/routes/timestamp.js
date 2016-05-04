@@ -1,12 +1,10 @@
 const router = require('express').Router(),
-          timeFormat = require('./../helpers/timeFormatHelper');
+      timeFormat = require('./../helpers/timeFormatHelper');
 
-router.route('/')
-    .get((request, response) => {
-        response.send("Time required");
-    });
+router.get('/', (request, response) => {
+  response.render('timeFormatter');
+});
 
-router.route('/:time')
-    .get(timeFormat);
+router.get('/:time', timeFormat);
 
 module.exports = router;

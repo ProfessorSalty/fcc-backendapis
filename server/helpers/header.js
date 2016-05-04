@@ -3,8 +3,7 @@ module.exports = (request, response) =>  {
             userAgent = request.headers["user-agent"],
             ipaddress = request.ip,
             OSregex = /\(([\w\s;]*)\)/g,
-            ipRegex = /[\d{1,3}.]+/g;
-
+            ipRegex = /(\d{1,3}.){4}/g;
             userAgent = userAgent.match(OSregex).toString();
             userAgent = userAgent.substring(1,userAgent.length - 1);
 

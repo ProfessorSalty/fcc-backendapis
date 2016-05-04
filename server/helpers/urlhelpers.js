@@ -1,6 +1,6 @@
 'use strict';
 const URL = require('../models/urlSchema.model.js'),
-      config = require('../../config/config.js'),
+      config = require('../config/config.js'),
       codec = require('./urlcodec.js');
 
 
