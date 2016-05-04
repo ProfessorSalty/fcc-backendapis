@@ -65,8 +65,8 @@ module.exports =   (request, response) => {
 
     if(num1 && !num2 && !word) {//Number alone is Unix time
         unixTime = new Date(num1);
-        dateString = unixTime.toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric' });
-        timeObj = {unixTime: +unixTime, naturalTime: dateString};
+        dateString = +(unixTime.toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric' }));
+        timeObj = {unixTime: unixTime, naturalTime: dateString};
     } else if(word){
         var month = getMonthFromWord(word);
         num1 = num1;
