@@ -58,11 +58,10 @@ module.exports =   (request, response) => {
     newTimeString = timeString.split(stregex).filter((x) => {
       return x !== '' && x !== ' ' && x !== undefined;
     });
-
-    var word = newTimeString[1],
-        num1 = +newTimeString[0],
-        num2 = +newTimeString[2];
-
+    // console.log(newTimeString);
+    var word = (newTimeString.filter((x)=> { return x.match(/\D{3,}/i)})).toString(),
+        num1 = +(newTimeString.filter((x)=> { return +(x) > 70})),
+        num2 = +(newTimeString.filter((x)=> { return +(x) < 32}));
     if(num1 && !num2 && !word) {//Number alone is Unix time
         unixTime = new Date(num1);
         dateString = +(unixTime.toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric' }));
