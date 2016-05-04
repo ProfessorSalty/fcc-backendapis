@@ -59,9 +59,6 @@ module.exports =   (request, response) => {
       return x !== '' && x !== ' ' && x !== undefined;
     });
 
-    console.log(newTimeString);
-
-
     var word = newTimeString[1],
         num1 = +newTimeString[0],
         num2 = +newTimeString[2];
