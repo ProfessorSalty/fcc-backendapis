@@ -1,0 +1,13 @@
+<h1>{{name}}</h1>
+<h2>{{description}}</h2>
+<p>{{instructions}}</p>
+<div class="examples">
+  <h3>Examples</h3>
+  {{#each examples}}
+    <h4>Example {{@index}}:</h4>
+    <h5>Input:</h5>
+    <pre>{{this.input}}</pre>
+    <h5>Expected output:</h5>
+    <pre>{{this.output}}</pre>
+  {{/each}}
+</div>
