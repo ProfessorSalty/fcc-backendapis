@@ -1,15 +1,16 @@
 var express = require('express'),
     app     = express(),
-    config  = require('./config/config.js'),
+    config  = require('./config/config'),
     port    = +process.argv[2] || config.devPort,
     time    = require('./routes/timestamp'),
     headerParser = require('./routes/headerparser'),
     shortener = require('./routes/urlshortener'),
     bodyParser = require('body-parser'),
     expressHandlbars = require('express-handlebars'),
-    viewsPath = __dirname + '/views';
+    viewsPath = __dirname + '/views',
+    handlebarsHelpers = require('./helpers/handlebarsHelpers');
 
-    app.engine('handlebars', expressHandlbars({defaultLayout: 'main', layoutsDir: viewsPath + '/layouts'}));
+    app.engine('handlebars', expressHandlbars({defaultLayout: 'main', layoutsDir: viewsPath + '/layouts', helpers: handlebarsHelpers}));
     app.set('view engine', 'handlebars');
     app.set('views', viewsPath);
 

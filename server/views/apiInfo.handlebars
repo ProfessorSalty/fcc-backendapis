@@ -2,9 +2,9 @@
 <h2>{{description}}</h2>
 <p>{{instructions}}</p>
 <div class="examples">
-  <h3>Examples</h3>
+  <h3>Example{{#if (gt examples.length 1)}}s{{/if}}</h3>
   {{#each examples}}
-    <h4>Example {{@index}}:</h4>
+    <h4>Example{{#if (gt @root.examples.length 1)}} {{inc @index}}{{/if}}:</h4>
     <h5>Input:</h5>
     <pre>{{this.input}}</pre>
     <h5>Expected output:</h5>
