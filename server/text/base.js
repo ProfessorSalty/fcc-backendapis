@@ -1,4 +1,4 @@
-var obj = {
+module.exports = {
   name: "",
   description: "",
   instructions: "",

@@ -3,5 +3,6 @@
 
 module.exports = {
   weatherKey: "",
-  mapsKey: ""
+  mapsKey: "",
+  twitchKey: ""
 };
