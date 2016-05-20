@@ -1,7 +1,6 @@
 'use strict';
 
-const fetchDataFrom = require('./fetchDataFrom'),
-      apiKeys = require('../config/apiKeys');
+const fetchDataFrom = require('./fetchDataFrom');
 
 module.exports = (request, response) => {
 
@@ -23,7 +22,6 @@ module.exports = (request, response) => {
           response.send(twitchObj);
         })
         .catch((error) => {
-          console.log(error);
           response.send(error);
         })
 };
