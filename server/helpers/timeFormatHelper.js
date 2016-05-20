@@ -63,8 +63,8 @@ module.exports =   (request, response) => {
         num1 = +(newTimeString.filter((x)=> { return +(x) > 70})),
         num2 = +(newTimeString.filter((x)=> { return +(x) < 32}));
     if(num1 && !num2 && !word) {//Number alone is Unix time
-        unixTime = new Date(num1);
-        dateString = +(unixTime.toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric' }));
+        unixTime = num1 * 1000;
+        dateString = new Date(unixTime).toLocaleString('en-us', { year: 'numeric', month: 'long', day: 'numeric' });
         timeObj = {unixTime: unixTime, naturalTime: dateString};
     } else if(word){
         var month = getMonthFromWord(word);
