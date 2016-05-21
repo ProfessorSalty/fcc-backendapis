@@ -16,12 +16,24 @@ module.exports = (request, response) => {
             preview: streamData ? streamData.preview.large : null,
             status: channelData.status,
             display_name: channelData.display_name,
-            logo: channelData.logo,
+            logo: channelData.logo || "http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png",
             url: channelData.url
           };
           response.send(twitchObj);
         })
         .catch((error) => {
-          response.send(error);
+          if(error.statusCode === 404) {
+            response.send({
+              isStreaming: false,
+              game: null,
+              preview: null,
+              status: "User does not exist",
+              display_name: userName,
+              logo: "http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png",
+              url: null
+            })
+          } else {
+            response.send(error);
+          }
         })
 };

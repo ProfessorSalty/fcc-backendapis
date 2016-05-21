@@ -7,7 +7,7 @@ module.exports = (URL) => {
             if(response.statusCode < 200 || response.statusCode > 299) {
               reject({
                 message:`Failed to get resource`,
-                code: response.statusCode
+                statusCode: response.statusCode
               });
             }
 

@@ -10,7 +10,10 @@ var express = require('express'),
     viewsPath = __dirname + '/views',
     handlebarsHelpers = require('./helpers/handlebarsHelpers'),
     weatherFetcher = require('./routes/weatherFetcher'),
-    twitchFetcher = require('./routes/twitchFetcher');
+    twitchFetcher = require('./routes/twitchFetcher'),
+    wikipediaViewer = require('./routes/wikipediaViewer'),
+    quoteFetcher = require('./routes/quoteFetcher'),
+    imageSearch = require('./routes/imageSearch');
 
     app.engine('handlebars', expressHandlbars({defaultLayout: 'main', layoutsDir: viewsPath + '/layouts', helpers: handlebarsHelpers}));
     app.set('view engine', 'handlebars');
@@ -38,6 +41,12 @@ var express = require('express'),
     app.use('/weather', weatherFetcher);
 
     app.use('/twitch', twitchFetcher);
+
+    app.use('/wikiview', wikipediaViewer);
+
+    app.use('/quote', quoteFetcher);
+
+    app.use('/image', imageSearch);
 
     app.listen(port,  () => {
         process.stdout.write(`Server listening on port ${port}\n`);
