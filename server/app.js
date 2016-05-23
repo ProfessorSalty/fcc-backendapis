@@ -13,7 +13,8 @@ var express = require('express'),
     twitchFetcher = require('./routes/twitchFetcher'),
     wikipediaViewer = require('./routes/wikipediaViewer'),
     quoteFetcher = require('./routes/quoteFetcher'),
-    imageSearch = require('./routes/imageSearch');
+    imageSearch = require('./routes/imageSearch'),
+    fileMetadataViewer = require('./routes/fileMetadataViewer');
 
     app.engine('handlebars', expressHandlbars({defaultLayout: 'main', layoutsDir: viewsPath + '/layouts', helpers: handlebarsHelpers}));
     app.set('view engine', 'handlebars');
@@ -47,6 +48,8 @@ var express = require('express'),
     app.use('/quote', quoteFetcher);
 
     app.use('/image', imageSearch);
+
+    app.use('/file', fileMetadataViewer);
 
     app.listen(port,  () => {
         process.stdout.write(`Server listening on port ${port}\n`);

@@ -14,7 +14,8 @@
     "express": "^4.13.3",
     "express-handlebars": "^3.0.0",
     "mongodb": "^2.1.18",
-    "mongoose": "^4.4.14"
+    "mongoose": "^4.4.14",
+    "multer": "^1.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"

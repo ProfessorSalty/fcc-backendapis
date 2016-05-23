@@ -1,0 +1,49 @@
+<script type="text/javascript">
+
+  var file;
+
+  function getFile() {
+    file = document.getElementById("file-input").files[0];
+  }
+
+  function submitStuff(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    var formData = new FormData(),
+        form = document.getElementById("upload-form"),
+        URL = window.location.origin + "/file/parse",
+        xhr = new XMLHttpRequest();
+    formData.append('file', file);
+    xhr.open('POST', URL, true);
+    xhr.send(formData);
+    return false;
+  }
+ window.onload = function() {
+  if (!window.File && window.FileReader && window.FileList && window.Blob) {
+    console.log("The File APIs are not fully supported in this browser.");
+    document.getElementById("error").className = "error";
+  }
+  document.getElementById("submitButton").addEventListener("click", submitStuff);
+ }
+</script>
+
+<style>
+  .error {
+    display: default;
+    color: red;
+    font-size: 1.4em;
+  }
+
+  .noerror {
+    display: none;
+  }
+</style>
+
+<h1>Get your file's size!</h1>
+<h2 class="noerror" id="error">Warning: The File APIs are not fully supported in this browser!</h2>
+<div>
+  <form method="POST" action="/file/parse" id="upload-form" enctype="multipart/form-data">
+    <input type="file" name="file" id="file-input" onchange="getFile()"/>
+    <button id="submitButton" type="submit">Submit</button>
+  </form>
+</div>
