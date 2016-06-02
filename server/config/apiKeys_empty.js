@@ -4,5 +4,7 @@
 module.exports = {
   weatherKey: "",
   mapsKey: "",
-  twitchKey: ""
+  twitchClientId: "",
+  twitchSecret: "",
+  flickr: ""
 };
