@@ -4,8 +4,18 @@ const fetchDataFrom = require('./fetchDataFrom');
 
 module.exports = (request, response) => {
 
-  const userName = request.params.userName;
-  Promise.all([fetchDataFrom(`https://api.twitch.tv/kraken/streams/${userName}`),fetchDataFrom(`https://api.twitch.tv/kraken/channels/${userName}`)])
+  const userName = request.params.userName,
+        streamObj = {
+          protocol: 'https:',
+          hostname: 'api.twitch.tv',
+          path: `/kraken/streams/${userName}`
+        },
+        channelObj = {
+          protocol: 'https:',
+          hostname: 'api.twitch.tv',
+          path: `/kraken/channels/${userName}`
+        };
+  Promise.all([fetchDataFrom(streamObj),fetchDataFrom(channelObj)])
         .then((fetchedData) => {
           let streamData = fetchedData[0].stream,
               channelData = fetchedData[1];

@@ -13,7 +13,14 @@ module.exports.search = (request, response) => {
             console.error(`Error occurred while saving model: ${error}`);
           });
 
-  fetchDataFrom('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=' + apiKeys.flickr + '&text=' + searchTerm + '&privacy_filter=1&safe_search=1&is_commons=true&per_page=10&page=' + pageNumber + '&format=json&nojsoncallback=1')
+  var requestObj = {
+      protocol: 'https:',
+      hostname: 'api.flickr.com',
+      path: '/services/rest/?method=flickr.photos.search&api_key='
+              + apiKeys.flickr + '&text=' + searchTerm + '&privacy_filter=1&safe_search=1&is_commons=true&per_page=10&page=' + pageNumber + '&format=json&nojsoncallback=1'
+    };
+
+  fetchDataFrom(requestObj)
     .then((result) => {
       let pages = result.photos.pages,
           photos = result.photos.photo.map(x=>{
@@ -27,6 +34,9 @@ module.exports.search = (request, response) => {
             pages: pages,
             photos: photos
           });
+    }).catch((error) => {
+      console.error(error);
+      response.send(error);
     });
 
 };
