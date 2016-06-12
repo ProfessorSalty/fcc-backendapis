@@ -6,7 +6,7 @@ module.exports.search = (request, response) => {
         requestObj = {
           protocol: 'https:',
           hostname: 'en.wikipedia.org',
-          path: '/w/api.php?action=query&list=search&srsearch='+ searchTerm +'&utf8&format=json'
+          path: `/w/api.php?action=query&list=search&srsearch=${searchTerm}&utf8&format=json`
         };
   fetchDataFrom(requestObj)
     .then((results) => {
@@ -32,7 +32,7 @@ module.exports.random = (request, response) => {
   }
   fetchDataFrom(randomRequestObject)
     .then((result) => {
-      response.redirect('https://en.wikipedia.org/wiki/' + result.query.random[0].title);
+      response.redirect(`https://en.wikipedia.org/wiki/${result.query.random[0].title}`);
     })
     .catch((error) => {
       response.send(error);

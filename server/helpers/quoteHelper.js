@@ -15,7 +15,7 @@ module.exports = (request, response) => {
       const wikiRequest = {
         protocol: 'https:',
         hostname: 'en.wikipedia.org',
-        path: '/w/api.php?action=query&list=search&srsearch='+ encodeURI(quote.title) +'&utf8&format=json'
+        path: `/w/api.php?action=query&list=search&srsearch=${encodeURI(quote.title)}&utf8&format=json`
       }
       return fetchDataFrom(wikiRequest)
         .then(queries => {
@@ -23,7 +23,7 @@ module.exports = (request, response) => {
             quote: quote.content.replace(/(?:\<\/?\w*\>)|[\n\r]+/g, "").trim(),
             author: quote.title,
             description: queries.query.search[0].snippet,
-            wikipediaLink: 'https://en.wikipedia.org/wiki/' + quote.title.replace(/\s/g, '_')
+            wikipediaLink: `https://en.wikipedia.org/wiki/${quote.title.replace(/\s/g, '_')}`
           });
         }).catch(error => {
           resonse.send(error);

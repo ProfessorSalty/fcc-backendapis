@@ -16,7 +16,7 @@ module.exports.processNewUrl = (request, response) => {
     if(err) {throw err;}
 
     if(doc) {
-      response.send({'shortUrl': request.hostname + "short/" + doc.shortUrl});
+      response.send({'shortUrl': `${request.hostname}short/${doc.shortUrl}`});
     } else {
       let newUrl = new URL({longUrl: incomingUrl, protocol: protocol});
 
@@ -27,7 +27,7 @@ module.exports.processNewUrl = (request, response) => {
           newUrl.update({'shortUrl': shortUrl}, (err, raw) => {
             if(err){console.error(err);}
           });
-          response.send({'shortUrl': request.hostname + "short/" + shortUrl});
+          response.send({'shortUrl': `${request.hostname}short/${doc.shortUrl}`});
         }
       });
 
