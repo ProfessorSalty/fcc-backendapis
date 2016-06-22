@@ -28,7 +28,7 @@ module.exports = function weatherHelper(request, response) {
         mapsObj = {
             protocol: 'https:',
             hostname: 'maps.googleapis.com',
-            path: `https://maps.googleapis.com/maps/api/geocode/json?latlng=${currentPosition}&key=${apiKeys.mapsKey}`
+            path: `maps/api/geocode/json?latlng=${currentPosition}&key=${apiKeys.mapsKey}`
         }
 
     Promise.all([fetchDataFrom(weatherObj), fetchDataFrom(mapsObj)])
