@@ -16,7 +16,8 @@
     "mongodb": "^2.1.18",
     "mongoose": "^4.4.14",
     "multer": "^1.1.0",
-    "nodemailer": "^2.5.0"
+    "nodemailer": "^2.5.0",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
