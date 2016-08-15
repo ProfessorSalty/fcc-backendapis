@@ -3,11 +3,16 @@ const router = require('express').Router(),
     transporter = nodemailer.createTransport('smtps://warbread%40gmail.com:uficbvfxdanbjldp@smtp.gmail.com');
 
 router.post('/', (request, response) => {
+    const message = `
+      <h1>A message has arrived!</h1>
+      <h2><b>From:</b> ${request.body.from}</h2>
+      <p>${request.body.text}</p>
+    `
     mailOptions = {
         from: request.body.from,
         to: 'crashingwaves@fea.st',
         subject: 'Someone is trying to contact you!',
-        text: request.body.text
+        html: message
     };
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
