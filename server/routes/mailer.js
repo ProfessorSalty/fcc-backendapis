@@ -1,6 +1,7 @@
 const router = require('express').Router(),
     nodemailer = require('nodemailer'),
-    transporter = nodemailer.createTransport('smtps://warbread%40gmail.com:uficbvfxdanbjldp@smtp.gmail.com'),
+    smtpConfig = require('../config/apiKeys.js').smtp,
+    transporter = nodemailer.createTransport(smtpConfig),
     winston = require('winston'),
     path = require('path'),
     logPath = path.resolve(__dirname, '..', 'logs'),
