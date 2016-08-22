@@ -6,17 +6,21 @@ const express = require('express'),
     headerParser = require('./routes/headerparser'),
     shortener = require('./routes/urlshortener'),
     bodyParser = require('body-parser'),
-    expressHandlbars = require('express-handlebars'),
-    handlebarsHelpers = require('./helpers/handlebarsHelpers'),
-    weatherFetcher = require('./routes/weatherFetcher'),
-    twitchFetcher = require('./routes/twitchFetcher'),
-    wikipediaViewer = require('./routes/wikipediaViewer'),
-    quoteFetcher = require('./routes/quoteFetcher'),
-    imageSearch = require('./routes/imageSearch'),
-    fileMetadataViewer = require('./routes/fileMetadataViewer'),
-    mailer = require('./routes/mailer.js'),
-    viewsPath = __dirname + '/views',
-    logDir = __dirname + '/logs';
+    jsonParser = bodyParser.json(),
+    urlParser = bodyParser.urlencoded({
+        extended: true
+    })
+expressHandlbars = require('express-handlebars'),
+handlebarsHelpers = require('./helpers/handlebarsHelpers'),
+weatherFetcher = require('./routes/weatherFetcher'),
+twitchFetcher = require('./routes/twitchFetcher'),
+wikipediaViewer = require('./routes/wikipediaViewer'),
+quoteFetcher = require('./routes/quoteFetcher'),
+imageSearch = require('./routes/imageSearch'),
+fileMetadataViewer = require('./routes/fileMetadataViewer'),
+mailer = require('./routes/mailer.js'),
+viewsPath = __dirname + '/views',
+logDir = __dirname + '/logs';
 
 try {
     require('fs').statSync(logDir);
@@ -38,34 +42,29 @@ app.use((request, response, next) => {
     next();
 });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
 app.get('/', (request, response) => {
     response.render('index');
 });
 
-app.use('/time', time);
+app.use('/time', urlParser, time);
 
-app.use('/header', headerParser);
+app.use('/header', urlParser, headerParser);
 
-app.use('/short', shortener);
+app.use('/short', urlParser, shortener);
 
-app.use('/weather', weatherFetcher);
+app.use('/weather', jsonParser, weatherFetcher);
 
 app.use('/twitch', twitchFetcher);
 
-app.use('/wikiview', wikipediaViewer);
+app.use('/wikiview', jsonParser, wikipediaViewer);
 
-app.use('/quote', quoteFetcher);
+app.use('/quote', urlParser, quoteFetcher);
 
-app.use('/image', imageSearch);
+app.use('/image', urlParser, imageSearch);
 
-app.use('/file', fileMetadataViewer);
+app.use('/file', urlParser, fileMetadataViewer);
 
-app.use('/sendmail', mailer);
+app.use('/sendmail', jsonParser, mailer);
 
 app.listen(port, () => {
     process.stdout.write(`Server listening on port ${port}
