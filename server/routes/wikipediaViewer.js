@@ -1,7 +1,7 @@
 const router = require("express").Router(),
-      wikipediaHelper = require('../helpers/wikipediaHelper');
+    wikipediaHelper = require('../helpers/wikipediaHelper');
 
-router.get('/', wikipediaHelper.random);
-router.get('/:searchTerm', wikipediaHelper.search);
+// router.get('/', wikipediaHelper.random);
+router.post('/', wikipediaHelper.search);
 
 module.exports = router;
