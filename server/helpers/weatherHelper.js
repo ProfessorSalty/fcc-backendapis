@@ -11,15 +11,25 @@ function getNewDate(epoch) {
     return {
         hours: date.getHours(),
         minutes: date.getMinutes(),
-        day: date.getDay(),
+        day: getDay(date.getDay()),
         date: date.getDate(),
-        month: date.getMonth()
+        month: getMonth(date.getMonth())
     }
+}
+
+function getMonth(month) {
+    const months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    return months[month];
+}
+
+function getDay(day) {
+    const days = ["Sunday", "Monday", "Tuesay", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return days[day];
 }
 
 module.exports = function weatherHelper(request, response) {
 
-const currentPosition = request.params.currentPosition,
+const currentPosition = request.body.currentPosition,
     weatherObj = {
         protocol: 'https:',
         hostname: 'api.forecast.io',
@@ -38,7 +48,7 @@ Promise.all([fetchDataFrom(weatherObj), fetchDataFrom(mapsObj)])
             city = cityData.results[1].formatted_address;
         let currentWeather = weatherData.currently,
             nextWeekWeather = weatherData.daily.data;
-
+        console.log(nextWeekWeather);
         currentWeather = {
             time: getNewDate(currentWeather.time),
             summary: currentWeather.summary,
@@ -55,7 +65,8 @@ Promise.all([fetchDataFrom(weatherObj), fetchDataFrom(mapsObj)])
                 summary: x.summary,
                 icon: x.icon,
                 precipProbability: x.precipProbability,
-                temperature: x.temperature,
+                low: x.temperatureMin,
+                high: x.temperatureMax,
                 windSpeed: x.windSpeed,
                 windBearing: x.windBearing,
                 sunriseTime: getNewDate(x.sunriseTime),
