@@ -17,7 +17,15 @@ module.exports = (requestObj) => {
             });
 
             response.on('end', () => {
+                try {
+
                 resolve(JSON.parse(body));
+                } catch(e) {
+                require('xml2js').parseString(body, (error, data) => {
+                    if(error) { reject(error); }
+                    resolve(data);
+                });
+            }
             });
 
             response.on('error', (error) => {
