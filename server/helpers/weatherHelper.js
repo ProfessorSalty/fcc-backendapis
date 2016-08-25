@@ -48,7 +48,6 @@ Promise.all([fetchDataFrom(weatherObj), fetchDataFrom(mapsObj)])
             city = cityData.results[1].formatted_address;
         let currentWeather = weatherData.currently,
             nextWeekWeather = weatherData.daily.data;
-        console.log(nextWeekWeather);
         currentWeather = {
             time: getNewDate(currentWeather.time),
             summary: currentWeather.summary,
