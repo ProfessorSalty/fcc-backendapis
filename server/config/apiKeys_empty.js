@@ -7,6 +7,7 @@ module.exports = {
     twitchClientId: "",
     twitchSecret: "",
     flickr: "",
+    quotes: "",
     smtp: {
         host: 'smtp.gmail.com',
         port: 465,
