@@ -58,7 +58,7 @@ app.use('/twitch', twitchFetcher);
 
 app.use('/wikiview', jsonParser, wikipediaViewer);
 
-app.use('/quote', urlParser, quoteFetcher);
+app.use('/quote', quoteFetcher);
 
 app.use('/image', urlParser, imageSearch);
 
