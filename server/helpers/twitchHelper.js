@@ -40,7 +40,7 @@ module.exports = (request, response) => {
         })
         .catch((error) => {
             if (error.statusCode === 404) {
-                response.send({
+                response.status(404).send({
                     isStreaming: false,
                     game: null,
                     preview: null,
@@ -50,7 +50,7 @@ module.exports = (request, response) => {
                     url: null
                 })
             } else {
-                response.send(error);
+                response.status(error.statusCode).send(error);
             }
         })
 };
