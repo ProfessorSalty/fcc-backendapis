@@ -9,7 +9,7 @@ const express = require('express'),
     jsonParser = bodyParser.json(),
     urlParser = bodyParser.urlencoded({
         extended: true
-    })
+    }),
 expressHandlbars = require('express-handlebars'),
 handlebarsHelpers = require('./helpers/handlebarsHelpers'),
 weatherFetcher = require('./routes/weatherFetcher'),
@@ -22,6 +22,7 @@ mailer = require('./routes/mailer.js'),
 viewsPath = __dirname + '/views',
 logDir = __dirname + '/logs';
 
+//Setup log folders
 try {
     require('fs').statSync(logDir);
 } catch ( e ) {
