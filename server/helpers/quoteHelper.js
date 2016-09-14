@@ -12,7 +12,7 @@ module.exports = (request, response) => {
   fetchDataFrom(requestObj)
     .then(result => {
       let quote = {
-        text: result.results.result[0].quote[0],
+        text: result.results.result[0].quote[0] || result.results.result[0].quote || "No text found on server",
         author: result.results.result[0].author[0]
       };
       //Get wikipedia page based on the quote author's name
