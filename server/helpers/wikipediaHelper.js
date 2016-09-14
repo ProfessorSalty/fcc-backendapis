@@ -1,6 +1,15 @@
 'use strict';
 const fetchDataFrom = require("./fetchDataFrom");
 
+function formatMonth(month) {
+    month += 1;
+    return month < 10 ? `0${month}` : month;
+}
+
+function formatDate(date) {
+    date -= 1;
+    return date < 10 ? `0${date}` : date;
+}
 module.exports.search = (request, response) => {
     const searchTerm = request.body.searchTerm,
         requestObj = {
@@ -8,6 +17,7 @@ module.exports.search = (request, response) => {
             hostname: 'en.wikipedia.org',
             path: `/w/api.php?action=query&list=search&srsearch=${searchTerm}&utf8&format=json`
         };
+
     fetchDataFrom(requestObj)
         .then((results) => {
             const filteredResults = results.query.search.map(x => {
@@ -24,17 +34,21 @@ module.exports.search = (request, response) => {
         })
 };
 
-module.exports.random = (request, response) => {
-    const randomRequestObject = {
-        protocol: 'https:',
-        hostname: 'en.wikipedia.org',
-        path: '/w/api.php?action=query&list=random&format=json&rnnamespace=0'
-    }
-    fetchDataFrom(randomRequestObject)
-        .then((result) => {
-            response.redirect(`https://en.wikipedia.org/wiki/${result.query.random[0].title}`);
-        })
-        .catch((error) => {
-            response.send(error);
-        })
-};
+module.exports.top = (request, response) => {
+    const today = new Date(),
+            requestObj = {
+                protocol: "https:",
+                hostname: "wikimedia.org",
+                path: `/api/rest_v1/metrics/pageviews/top/en.wikipedia/all-access/${today.getUTCFullYear()}/${formatMonth(today.getUTCMonth())}/${formatDate(today.getUTCDate())}`
+            };
+            fetchDataFrom(requestObj)
+                .then(results => {
+                    const filteredResults = results.items[0].articles
+                        .filter(result => !result.article.match(/(special\:|main)/i) && result.rank <= 25)
+                        .map(result => ({title: result.article, url: `https://en.wikipedia.org/wiki/${result.article}`}))
+                    response.send(filteredResults);
+                })
+                .catch(error => {
+                    response.send(error);
+                })
+}
