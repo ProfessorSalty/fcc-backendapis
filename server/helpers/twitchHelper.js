@@ -3,7 +3,7 @@
 const fetchDataFrom = require('./fetchDataFrom'),
       apiKeys = require('../config/apiKeys');
 
-module.exports = (request, response) => {
+module.exports.fetchUser = (request, response) => {
 
     const userName = request.params.userName,
         streamObj = {
@@ -54,3 +54,23 @@ module.exports = (request, response) => {
             }
         })
 };
+
+module.exports.searchUser = (request, response) => {
+    const userName = request.params.userName,
+        channelObj = {
+            protocol: 'https:',
+            hostname: 'api.twitch.tv',
+            path: `/kraken/search/channels?q=${userName}`,
+            headers: {
+              'Client-ID': apiKeys.twitchClientId
+            }
+        };
+
+    fetchDataFrom(channelObj).then(data => {
+        response.send(data
+                .channels.map(channel => ({
+                    display_name: channel.display_name,
+                    logo: channel.logo || "http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png"})));
+    })
+    .catch(error => response.send(error));
+}
