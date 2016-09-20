@@ -32,7 +32,7 @@ module.exports = function weatherHelper(request, response) {
 const currentPosition = request.body.currentPosition,
     weatherObj = {
         protocol: 'https:',
-        hostname: 'api.forecast.io',
+        hostname: 'api.darksky.net',
         path: `/forecast/${apiKeys.weatherKey}/${currentPosition}`
     },
     mapsObj = {
