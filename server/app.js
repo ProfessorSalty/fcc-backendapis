@@ -10,17 +10,29 @@ const express = require('express'),
     urlParser = bodyParser.urlencoded({
         extended: true
     }),
-expressHandlbars = require('express-handlebars'),
-handlebarsHelpers = require('./helpers/handlebarsHelpers'),
-weatherFetcher = require('./routes/weatherFetcher'),
-twitchFetcher = require('./routes/twitchFetcher'),
-wikipediaViewer = require('./routes/wikipediaViewer'),
-quoteFetcher = require('./routes/quoteFetcher'),
-imageSearch = require('./routes/imageSearch'),
-fileMetadataViewer = require('./routes/fileMetadataViewer'),
-mailer = require('./routes/mailer.js'),
-viewsPath = __dirname + '/views',
-logDir = __dirname + '/logs';
+    rateLimiter = require('express-rate-limit'),
+    expressHandlbars = require('express-handlebars'),
+    handlebarsHelpers = require('./helpers/handlebarsHelpers'),
+    weatherFetcher = require('./routes/weatherFetcher'),
+    twitchFetcher = require('./routes/twitchFetcher'),
+    wikipediaViewer = require('./routes/wikipediaViewer'),
+    quoteFetcher = require('./routes/quoteFetcher'),
+    imageSearch = require('./routes/imageSearch'),
+    fileMetadataViewer = require('./routes/fileMetadataViewer'),
+    mailer = require('./routes/mailer.js'),
+    viewsPath = __dirname + '/views',
+    logDir = __dirname + '/logs';
+
+//Rate limiters
+const emailLimiter = new rateLimiter({
+        windowMs: 15*60*1000, // 15 minutes
+        max: 5,
+        delayMs: 5000
+    }),apiLimiter = new rateLimiter({
+        windowMs: 15*60*1000, // 15 minutes
+        max: 100,
+        delayMs: 2000
+    })
 
 //Setup log folders
 try {
@@ -28,6 +40,8 @@ try {
 } catch ( e ) {
     require('fs').mkdirSync(logDir);
 }
+
+app.enable('trust proxy')
 
 app.engine('handlebars', expressHandlbars({
     defaultLayout: 'main',
@@ -47,25 +61,25 @@ app.get('/', (request, response) => {
     response.render('index');
 });
 
-app.use('/time', urlParser, time);
+app.use('/time', apiLimiter, urlParser, time);
 
-app.use('/header', urlParser, headerParser);
+app.use('/header', apiLimiter, urlParser, headerParser);
 
-app.use('/short', urlParser, shortener);
+app.use('/short', apiLimiter, urlParser, shortener);
 
-app.use('/weather', jsonParser, weatherFetcher);
+app.use('/weather', apiLimiter, jsonParser, weatherFetcher);
 
-app.use('/twitch', twitchFetcher);
+app.use('/twitch', apiLimiter, twitchFetcher);
 
-app.use('/wikiview', jsonParser, wikipediaViewer);
+app.use('/wikiview', apiLimiter, jsonParser, wikipediaViewer);
 
-app.use('/quote', quoteFetcher);
+app.use('/quote', apiLimiter, quoteFetcher);
 
-app.use('/image', urlParser, imageSearch);
+app.use('/image', apiLimiter, urlParser, imageSearch);
 
-app.use('/file', urlParser, fileMetadataViewer);
+app.use('/file', apiLimiter, urlParser, fileMetadataViewer);
 
-app.use('/sendmail', jsonParser, mailer);
+app.use('/sendmail', emailLimiter ,urlParser, mailer);
 
 app.listen(port, () => {
     process.stdout.write(`Server listening on port ${port}

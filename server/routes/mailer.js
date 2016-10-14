@@ -22,15 +22,16 @@ const router = require('express').Router(),
     });
 
 router.post('/', (request, response) => {
+    console.log(request.body);
     const message = `
       <h1>A message has arrived!</h1>
-      <h2><b>From:</b> ${request.body.from}</h2>
-      <p>${request.body.text}</p>
+      <h2><b>From:</b> ${request.body.name} : ${request.body.email}</h2>
+      <p>${request.body.message}</p>
     `
     logger.info('New message coming in:', request.body);
 
     mailOptions = {
-        from: request.body.from,
+        from: request.body.email,
         to: 'crashingwaves@fea.st',
         subject: 'Someone is trying to contact you!',
         html: message

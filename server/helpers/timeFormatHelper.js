@@ -58,7 +58,7 @@ module.exports =   (request, response) => {
     newTimeString = timeString.split(stregex).filter((x) => {
       return x !== '' && x !== ' ' && x !== undefined;
     });
-    // console.log(newTimeString);
+
     var word = (newTimeString.filter((x)=> { return x.match(/\D{3,}/i)})).toString(),
         num1 = +(newTimeString.filter((x)=> { return +(x) > 70})),
         num2 = +(newTimeString.filter((x)=> { return +(x) < 32}));
