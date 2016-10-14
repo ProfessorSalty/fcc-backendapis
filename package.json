@@ -1,13 +1,14 @@
 {
   "name": "fcc-basejumps",
   "version": "1.0.0",
-  "description": "",
+  "description": "My general purpose API server",
   "main": "index.js",
   "scripts": {
     "start": "nodemon ./server/app.js",
     "mongo": "mongod --port 27017 --dbpath=./server/data --nojournal"
   },
-  "author": "",
+  "repository": "https://github.com/PortableStick/fcc-backendapis",
+  "author": "Gregory Smith",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
