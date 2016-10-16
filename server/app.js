@@ -30,8 +30,14 @@ const emailLimiter = new rateLimiter({
         delayMs: 5000
     }),apiLimiter = new rateLimiter({
         windowMs: 15*60*1000, // 15 minutes
-        max: 100,
+        max: 1000,
         delayMs: 2000
+    }),quoteLimiter = new rateLimiter({
+        windowMs: 15*60*1000, // 15 minutes
+        max: 1000,
+        delayMs: 2000,
+        delayAfter: 100,
+        message: "Too many requests"
     })
 
 //Setup log folders
@@ -73,7 +79,7 @@ app.use('/twitch', apiLimiter, twitchFetcher);
 
 app.use('/wikiview', apiLimiter, jsonParser, wikipediaViewer);
 
-app.use('/quote', apiLimiter, quoteFetcher);
+app.use('/quote', quoteLimiter, quoteFetcher);
 
 app.use('/image', apiLimiter, urlParser, imageSearch);
 
