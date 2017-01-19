@@ -3,6 +3,5 @@ bower_components
 .DS_Store
 data
 npm-debug*
-server/config/apiKeys.js
 *.winston_log
 

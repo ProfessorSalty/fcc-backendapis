@@ -58,8 +58,9 @@ app.set('view engine', 'handlebars');
 app.set('views', viewsPath);
 
 app.use((request, response, next) => {
-    response.header("Access-Control-Allow-Origin", "*");
+    response.header("Access-Control-Allow-Origin", "https://gregoftheweb.com");
     response.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    response.header("Access-Control-Allow-Methods", "GET,POST,OPTIONS")
     next();
 });
 
