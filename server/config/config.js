@@ -1,4 +1,4 @@
 module.exports = {
   devPort: 9000,
-  dbPath: "mongodb://localhost:27017"
+  dbPath: process.env.MONGODB_PATH || "mongodb://localhost:27017"
 }

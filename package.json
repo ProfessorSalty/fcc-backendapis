@@ -4,7 +4,8 @@
   "description": "My general purpose API server",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./server/app.js",
+    "start": "node ./server/app.js",
+    "dev-start": "nodemon ./server/app.js",
     "mongo": "mongod --port 27017 --dbpath=./server/data --nojournal"
   },
   "repository": "https://github.com/PortableStick/fcc-backendapis",
