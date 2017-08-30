@@ -1,7 +1,7 @@
 module.exports = (request, response) =>  {
         var language = request.headers["accept-language"].slice(0,6),
             userAgent = request.headers["user-agent"],
-            ipaddress = request.ip,
+            ipaddress = request.headers['x-forwarded-for'] || request.connection.remoteAddress,
             OSregex = /\(([\w\s;]*)\)/g,
             ipv4Regex = /(\d{1,3}.?){4}/g;
             ipv6Regex = /(\w{0,4}:\d?)+/g;

@@ -4,7 +4,7 @@ module.exports = {
   instructions: "By sending search string with the query parameter searchTerm, the user will receive a JSON object with the number of pages and an array of photo objects, each with the Flickr title and a link to the Flickr page.  The search terms are paginated and can be paged through with the pageNumber parameter.",
   examples: [
     {
-      input: "https://shadesofmarkup.com/api/image?searchTerm=piglets&pageNumber=1",
+      input: "https://api.gregoftheweb.com/image?searchTerm=piglets&pageNumber=1",
       output: `{
         "pages": 3,
         "photos": [
