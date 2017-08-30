@@ -23,6 +23,8 @@ const express = require('express'),
     viewsPath = __dirname + '/views',
     logDir = __dirname + '/logs';
 
+
+app.enable('trust proxy')
 //Rate limiters
 const emailLimiter = new rateLimiter({
         windowMs: 15*60*1000, // 15 minutes

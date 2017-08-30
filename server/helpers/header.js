@@ -16,6 +16,5 @@ module.exports = (request, response) =>  {
                 "language": language,
                 "software": userAgent
             }
-
         response.json(headerInfo);
     };
