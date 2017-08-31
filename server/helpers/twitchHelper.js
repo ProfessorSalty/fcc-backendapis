@@ -49,6 +49,16 @@ module.exports.fetchUser = (request, response) => {
                     logo: "http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png",
                     url: null
                 })
+            } else if (error.statusCode === 422) {
+                response.send({
+                    isStreaming: false,
+                    game: null,
+                    preview: null,
+                    status: "User has been suspended or deleted",
+                    display_name: userName,
+                    logo: "http://static-cdn.jtvnw.net/jtv_user_pictures/xarth/404_user_150x150.png",
+                    url: null
+                })
             } else {
                 response.status(error.statusCode).send(error);
             }

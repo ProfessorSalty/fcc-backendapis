@@ -49,7 +49,7 @@ try {
     require('fs').mkdirSync(logDir);
 }
 
-app.enable('trust proxy')
+app.set('trust proxy', 'loopback')
 
 app.engine('handlebars', expressHandlbars({
     defaultLayout: 'main',
@@ -78,7 +78,7 @@ app.use('/short', apiLimiter, urlParser, shortener);
 
 app.use('/weather', apiLimiter, jsonParser, weatherFetcher);
 
-app.use('/twitch', apiLimiter, twitchFetcher);
+app.use('/twitch',  twitchFetcher);
 
 app.use('/wikiview', apiLimiter, jsonParser, wikipediaViewer);
 
