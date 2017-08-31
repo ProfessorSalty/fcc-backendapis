@@ -57,7 +57,8 @@ plan.remote(['staging', 'production'], function(remote) {
     remote.with(`cd ${plan.runtime.options.webRoot}/apps/${appName}`, function() {
         remote.log('Install dependencies');
         remote.sudo(`npm install --production`, {user: plan.runtime.options.ownerUser});
-        //remote.exec(`ln -s ${plan.runtime.options.webRoot}/apiKeys.js server/config/apiKeys.js`)
+        remote.exec(`rm server/config/apiKeys.js`)
+        remote.exec(`ln -s ${plan.runtime.options.webRoot}/apiKeys.js server/config/apiKeys.js`)
         remote.exec(`sudo /bin/systemctl restart node-app.service`);
     });
 });

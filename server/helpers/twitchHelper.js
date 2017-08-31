@@ -60,7 +60,7 @@ module.exports.searchUser = (request, response) => {
         channelObj = {
             protocol: 'https:',
             hostname: 'api.twitch.tv',
-            path: `/kraken/search/channels?q=${userName}`,
+            path: `/kraken/search/channels?query=${userName}`,
             headers: {
               'Client-ID': apiKeys.twitchClientId
             }
