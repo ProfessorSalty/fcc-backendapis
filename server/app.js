@@ -70,23 +70,23 @@ app.get('/', (request, response) => {
     response.render('index');
 });
 
-app.use('/time', apiLimiter, urlParser, time);
+app.use('/time',  urlParser, time);
 
-app.use('/header', apiLimiter, urlParser, headerParser);
+app.use('/header',  urlParser, headerParser);
 
-app.use('/short', apiLimiter, urlParser, shortener);
+app.use('/short',  urlParser, shortener);
 
-app.use('/weather', apiLimiter, jsonParser, weatherFetcher);
+app.use('/weather', jsonParser, weatherFetcher);
 
 app.use('/twitch',  twitchFetcher);
 
-app.use('/wikiview', apiLimiter, jsonParser, wikipediaViewer);
+app.use('/wikiview',  jsonParser, wikipediaViewer);
 
-app.use('/quote', quoteLimiter, quoteFetcher);
+app.use('/quote',  quoteFetcher);
 
-app.use('/image', apiLimiter, urlParser, imageSearch);
+app.use('/image', urlParser, imageSearch);
 
-app.use('/file', apiLimiter, urlParser, fileMetadataViewer);
+app.use('/file',  urlParser, fileMetadataViewer);
 
 app.use('/sendmail', emailLimiter ,urlParser, mailer);
 
